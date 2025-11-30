@@ -57,4 +57,7 @@ Once all the boards are flashed and set up, the complete pipeline is:
 ## Project Expansions:
 
 A few project expansions that would improve the quality of this project would be:
-1. 
+
+1. Increase the number of training images collected and used.
+2. Collect the training images on the Raspberry Pi Camera instead of a telephone.
+3. Have more diverse training data.
