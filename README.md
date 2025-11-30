@@ -22,8 +22,19 @@ Finally, in the `Object Detection` tab, the last parameters and set and model tr
 
 **Training Results:**
 
-![alt text](training-results.png)
+![Training Results](training-results.png)
 
 ### Application Development
 
 ## Project Demonstration
+
+**Raspberry Pi Inference Example:**
+
+![Raspberry Pi Inference Example](inference-ex.png)
+
+[Video demonstation](https://youtu.be/yrMXqR6eSiM)
+
+## Project Expansions:
+
+A few project expansions that would improve the quality of this project would be:
+1. 
