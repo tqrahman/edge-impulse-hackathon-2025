@@ -34,8 +34,12 @@ Finally, in the `Object Detection` tab, the last parameters and set and model tr
 ### Application Development
 
 
-The applicaiton development starts with flashing a version of Raspberry Pi OS to an SD that will be used by our Raspberry Pi. Once the Pi is powered on we SSH into its terminal, we install the [Edge Impulse Linux CLI](https://docs.edgeimpulse.com/tools/clis/edge-impulse-linux-cli#edge-impulse-linux), and downloaded the model to the Raspberry Pi. We also set up the T-Beams to be our Papa and Mama Ducks that will be used in our project that will be used to send data to the web app. For the Papa Duck, it is flashed using Duck Management System (DMS) and for the Mama Duck it is flashed using a custom .ino file. Once all the boards are flashed and set up, the pipeline will be: 
-1. The Raspberry Pi will run the Edge Impulse model with the connected Raspberry Pi Camera.
+The applicaiton development starts with flashing a version of Raspberry Pi OS to an SD that will be used by our Raspberry Pi. Once the Pi is powered on we SSH into its terminal, we install the [Edge Impulse Linux CLI](https://docs.edgeimpulse.com/tools/clis/edge-impulse-linux-cli#edge-impulse-linux), and downloaded the model to the Raspberry Pi. The Linux CLI will be used to run the model and then pipeline the output into a python file that will parse the output and send the number of open spots to the web app. This is done by using the command: `edge-impulse-linux-runner --model-file hackathon_2025-linux-aarch64-v2.eim | python main.py` 
+
+We also set up the T-Beams to be our Papa and Mama Ducks that will be used in our project that will be used to send data to the web app. For the Papa Duck, it is flashed using Duck Management System (DMS) and for the Mama Duck it is flashed using a custom .ino file and PlatformIO. 
+
+Once all the boards are flashed and set up, the complete pipeline is: 
+1. The Raspberry Pi will run the Edge Impulse model using the Raspberry Pi Camera.
 2. When the Pi detects an open parking spot, it will send a message using UART to the Mama Duck T-Beam that is hardwired to it.
 3. The Mama Duck will then send a packet using LoRa to the Papa Duck T-Beam.
 4. The Papa Duck will relay that packet back to DMS.
