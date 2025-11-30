@@ -29,7 +29,7 @@ Finally, in the `Object Detection` tab, the last parameters and set and model tr
 
 **Training Results:**
 
-![alt text](training-results.png)
+![Training Results](training-results.png)
 
 ### Application Development
 
@@ -48,6 +48,13 @@ Once all the boards are flashed and set up, the complete pipeline is:
 
 ## Project Demonstration
 
-<img alt="Raspberry Pi Inference Example" src="https://github.com/user-attachments/assets/8019e381-7d3a-470a-99cc-41c448989242" />
+**Raspberry Pi Inference Example:**
 
-[Video Demonstration/Skit](https://youtu.be/9GSTWffmle4)
+![Raspberry Pi Inference Example](inference-ex.png)
+
+[Video demonstation](https://youtu.be/yrMXqR6eSiM)
+
+## Project Expansions:
+
+A few project expansions that would improve the quality of this project would be:
+1. 

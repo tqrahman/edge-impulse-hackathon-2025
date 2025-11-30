@@ -49,7 +49,7 @@ void setup() {
     return;
   }
 
-  Serial2.begin(9600, SERIAL_8N1, 15, 13); // RX=15, TX=13
+  Serial2.begin(9600, SERIAL_8N1, 35, -1); // RX=15, TX=13
 
   // timer.every(INTERVAL_MS, runSensor);
   
