@@ -52,6 +52,10 @@ Once all the boards are flashed and set up, the complete pipeline is:
 
 ![Raspberry Pi Inference Example](inference-ex.png)
 
+**Web App Preview:**
+
+![Web App](web-app.png)
+
 [Video demonstation](https://youtu.be/yrMXqR6eSiM)
 
 ## Project Expansions:
